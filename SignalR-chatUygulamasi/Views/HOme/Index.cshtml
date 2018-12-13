@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        li{
+            list-style-type:none;
+            border:1px solid black;
+            padding:5px;
+        }
+        li p{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titleName"></h1>
+    <input type="text" id="txtMessage" name="name" value="" />
+    <br />
+    <button id="btnSend">Send Message</button>
+    <hr />
+    <ul id="chatList"></ul>
+    <script src="~/Scripts/jquery-1.6.4.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.3.0.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script src="~/Hubs/chathub.js"></script>
+</body>
+</html>
+
